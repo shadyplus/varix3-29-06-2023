@@ -1854,6 +1854,12 @@ b {
       margin-bottom: 23px; }
       .newlife-content-box__img {
         position: relative; }
+      .newlife-content-box__img img {
+        width: 328px;
+    border-radius: 18%;
+    height: 167px;
+    border: 2px solid;
+      }
         .newlife-content-box__img:after {
           content: "1";
           position: absolute;

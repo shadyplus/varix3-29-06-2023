@@ -1,0 +1,9 @@
+@font-face {
+			font-family: "SredaRegular";
+			src: url("../fonts/SredaRegular/SredaRegular.eot");
+			src: url("../fonts/SredaRegular/SredaRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/SredaRegular/SredaRegular.woff") format("woff"),
+			url("../fonts/SredaRegular/SredaRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}

@@ -1,0 +1,266 @@
+@font-face {
+	font-family: 'Gotthard';
+	src: url('12291.otf');
+
+}
+
+
+
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99999; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+
+.modal-content {
+	text-align: center;
+	position: relative;
+	background-color: #ccdce6;
+	margin: auto;
+	padding: 0;
+	border: 5px solid #1f3b65;
+	width: 320px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	    margin-bottom: 10px;
+	padding: 2px 16px;
+	background-color: #3170cc;
+	color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #3170cc;
+	color: white;
+}
+.call-text{
+	font-size: 20px;
+	margin: 0;
+	padding: 20px;
+}
+#order_form2{
+	padding-bottom: 20px;
+}
+
+/*--------------------------*/
+#foot-block{
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0 auto;
+}
+.btn-footer{
+	width: 100%;
+	height: 60px;
+	background-color: #3f6b33;
+	background-image: url(../footer/call.png);
+	background-repeat: no-repeat;
+	border-radius: 16px;
+	color: white;
+	font-size: 17px;
+	padding-left: 40px;
+	margin-top: 10px;
+	   
+}
+.foot-text{
+	font-family: 'Gotthard';
+	text-align: left;
+	color: white;
+	font-size: 13px;
+	padding-left: 11px;
+	 margin-bottom: 10px;
+}
+.adress-text{
+	color: white;
+	 margin-bottom: 6px;
+}
+.map{
+	width: 300px;
+	padding-top: 10px;
+}
+.footer-icons{
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-top: 5px;
+}
+
+.linea1{
+	margin: 0px 4px 4px;
+	width: 90px;
+	background-color: white;
+	border-radius: 15px;
+	height: 67px;
+}
+.linea-icon{
+	width: 60px;
+	padding-top: 5px;
+}
+.foot-block-section1{
+	width: 320px;
+}
+.foot-block-section2{
+	width: 320px;
+}
+.foot-block-section3{
+	width: 320px;
+}
+.post{
+	width: 290px;
+	background-color: white;
+	border-radius: 15px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.linea-footer{
+	background-color: #3b3b3b;
+	height: 70px;
+	width: 1000px;
+	margin: 5px auto;
+	border-radius: 20px;
+}
+.linea-footer-text{
+	color: white;
+	margin: 0 auto;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-top: 10px;
+	font-family: system-ui;
+}
+.map2{
+	display: none;
+}
+@media  (max-width: 1000px){
+	#foot-block {
+		width: 480px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.foot-block-section2 {
+		order: 1;
+		width: 480px;
+	}
+	.foot-block-section1 {
+
+		width: 230px;
+	}
+	.foot-block-section3 {
+
+		width: 230px;
+	}
+	.footer-icons {
+		width: 230px;
+	}
+	.post {
+		width: 230px;
+	}
+	.linea-footer{
+		width: 90%;
+		height: 70px;
+	}
+	.map2{
+		display: block;
+	}
+	.map{
+		display: none;
+	}
+}
+@media  (max-width: 480px){
+	#foot-block{
+		display: block;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.linea-footer{
+		width: 290px;
+		height: 70px;
+	}
+	.foot-block-section1, .foot-block-section2, .foot-block-section3 {
+		margin: 0 auto;
+	}
+	.linea-footer-text{
+		font-size: 17px;
+	}
+	.btn-footer {
+		height: 60px;
+		font-size: 21px;
+		width: 90%;
+
+	}
+	.map{
+		width: 100%;
+	}
+	.post{
+		margin: 5px auto;
+		width: 90%;
+	}
+	.footer-icons{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 5px;
+	}
+	.foot-block-section1 {
+		width: 320px;
+	}
+	.foot-block-section2 {
+		width: 320px;
+	}
+	.foot-block-section3 {
+		width: 320px;
+	}
+	.map2{
+		display: none;
+	}
+}
+
+
+
